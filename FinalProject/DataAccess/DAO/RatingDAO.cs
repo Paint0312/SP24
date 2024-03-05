@@ -50,5 +50,24 @@ namespace DataAccess.DAO
         {
             return context.Ratings.Where(r => r.UserId == id).ToList();
         }
+        public List<Rating> GetRattingByCourseIdHaveName(int courseId)
+        {
+            /*select u.FirstName + u.LastName as 'Name', r.Rating, r.Comment, r.CreatedDate, r.UpdatedDate from Ratings r
+            join Users u on u.Id = r.UserId
+            where CourseId = 1*/
+            var query = from r in context.Ratings
+                        join u in context.Users on r.UserId equals u.Id
+                        where r.CourseId == courseId
+                        select new Rating
+                        {
+                            User = u,
+                            Rating1 = r.Rating1,
+                            Comment = r.Comment,
+                            CreatedDate = r.CreatedDate,
+                            UpdatedDate = r.UpdatedDate
+                        };
+
+            return query.ToList();
+        }
     }
 }

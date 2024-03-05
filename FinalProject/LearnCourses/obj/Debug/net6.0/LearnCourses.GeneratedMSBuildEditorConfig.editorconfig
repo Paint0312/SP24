@@ -18,16 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Ki5-SP24\PRN211\Github\FinalProject\LearnCourses
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Ki5-SP24/PRN211/Github/FinalProject/LearnCourses/Views/Home/Cart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
+[D:/Ki5-SP24/PRN211/Github/FinalProject/LearnCourses/Views/Courses/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ki5-SP24/PRN211/Github/FinalProject/LearnCourses/Views/Home/CourseDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2VEZXRhaWxzLmNzaHRtbA==
+[D:/Ki5-SP24/PRN211/Github/FinalProject/LearnCourses/Views/Courses/CourseDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDb3Vyc2VEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Ki5-SP24/PRN211/Github/FinalProject/LearnCourses/Views/Home/Courses.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2VzLmNzaHRtbA==
+[D:/Ki5-SP24/PRN211/Github/FinalProject/LearnCourses/Views/Courses/Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDb3Vyc2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Ki5-SP24/PRN211/Github/FinalProject/LearnCourses/Views/Home/HomePage.cshtml]

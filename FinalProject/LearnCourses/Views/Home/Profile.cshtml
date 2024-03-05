@@ -113,8 +113,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/Home/Courses">Course Archive</a></li>
-                                    <li><a href="/Home/CoureDetails">Course Detail</a></li>
+                                    <li><a href="/Courses/Courses">Course Archive</a></li>
+                                <li><a href="/Courses/CoureDetails">Course Detail</a></li>
                                 </ul>
                             </li>
                             <li><a href="gallery.html">Gallery</a></li>
@@ -135,7 +135,7 @@
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="/Home/Profile">Profile</a></li>
                                     <li><a href="course-detail.html">Balance</a></li>
-                                    <li><a href="/Home/Cart">Cart</a></li>
+                                <li><a href="/Courses/Cart">Cart</a></li>
                                     <li><a href="/Home/Logout">Logout</a></li>
                                 </ul>
                             </li>
@@ -190,7 +190,7 @@
                                 <form class="contactform" asp-action="Profile" method="post">
                                     <div class="form-group">
                                         <label for="firstname">First Name <span class="required">*</span></label>
-                                        <input type="text" class="form-control" required="required" name="firstname" value="@Model.FirstName">
+                                        <input type="text" class="form-control" required="required" name="firstname" value="@Model.FirstName" autofocus>
                                     </div>
                                     <div class="form-group">
                                         <label for="lastname">Last Name <span class="required">*</span></label>

@@ -34,5 +34,9 @@ namespace DataAccess.Repository.RatingRepo
         {
             RatingDAO.Instance.UpdateRating(rating);
         }
+        public List<Rating> GetRattingByCourseIdHaveName(int id)
+        {
+            return RatingDAO.Instance.GetRattingByCourseIdHaveName(id);
+        }
     }
 }

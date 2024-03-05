@@ -14,5 +14,6 @@ namespace DataAccess.Repository.RatingRepo
         void UpdateRating(Rating rating);
         void DeleteRating(Rating rating);
         List<Rating> GetRatingByUserId(int id);
+        List<Rating> GetRattingByCourseIdHaveName(int id);
     }
 }
