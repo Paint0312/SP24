@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject.Model;
 using DataAccess.DAO;
 using System;
 using System.Collections.Generic;
@@ -20,7 +20,7 @@ namespace DataAccess.Repository.CourseRepo
             CourseDAO.Instance.DeleteCourse(course);
         }
 
-        public Course GetCourseById(int id)
+        public List<Course> GetCourseById(int id)
         {
             return CourseDAO.Instance.GetCourseById(id);
         }
@@ -28,6 +28,11 @@ namespace DataAccess.Repository.CourseRepo
         public IEnumerable<Course> GetCourses()
         {
             return CourseDAO.Instance.GetCourses();
+        }
+
+        public List<Course> GetCoursesByUserID(int id)
+        {
+            return CourseDAO.Instance.GetCoursesByUserID(id);
         }
 
         public void UpdateCourse(Course course)

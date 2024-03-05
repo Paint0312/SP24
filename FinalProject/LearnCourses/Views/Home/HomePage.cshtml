@@ -1,6 +1,6 @@
 ﻿@{
     Layout = null;
-    var coursesList = ViewBag.Courses as List<BusinessObject.Models.Course>;
+    var coursesList = ViewBag.Courses as List<BusinessObject.Model.Course>;
 }
 
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
@@ -92,14 +92,14 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="/Home/HomePage">Home</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 Course <span class="fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/Home/Courses">Course Archive</a></li>
-                                <li><a href="course-detail.html">Course Detail</a></li>
+                                <li><a href="/Home/CourseDetails">Course Detail</a></li>
                             </ul>
                         </li>
                         <li><a href="gallery.html">Gallery</a></li>
@@ -114,17 +114,16 @@
                         <li><a href="404.html">404 Page</a></li>
                         <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
 
-                        <li style="margin: 20px 0 13px 0;">
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-users"></i>
-                                    <span class="caret"></span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a style="display: flex; justify-content: center; align-items: center;" class="dropdown-item" href="#">Profile</a>
-                                    <a style="display: flex; justify-content: center; align-items: center;" class="dropdown-item" href="#">Balance</a>
-                                </div>
-                            </div>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i> <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/Home/Profile">Profile</a></li>
+                                <li><a href="course-detail.html">Balance</a></li>
+                                <li><a href="/Home/Cart">Cart</a></li>
+                                <li><a href="/Home/Logout">Logout</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div><!--/.nav-collapse -->
@@ -165,7 +164,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde
                     eveniet deserunt est debitis corporis temporibus recusandae accusamus.
                 </p>
-                <a href="#" class="mu-read-more-btn">Read More</a>
+                <a href="/Home/Courses" class="mu-read-more-btn">Read More</a>
             </div>
         </div>
         <!-- Start single slider item -->
@@ -225,27 +224,26 @@
                                     </div>
                                     <!-- End Title -->
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum pariatur fuga eveniet soluta
-                                        aspernatur rem, nam voluptatibus voluptate voluptates sapiente, inventore. Voluptatem, maiores esse
-                                        molestiae.
+                                        Welcome to our online learning platform! We're dedicated to providing high-quality education and 
+                                        resources to empower learners worldwide. Our mission is to make learning accessible, 
+                                        engaging, and effective for everyone, regardless of their background or location.
                                     </p>
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                        <li>Saepe a minima quod iste libero rerum dicta!</li>
-                                        <li>Voluptas obcaecati, iste porro fugit soluta consequuntur. Veritatis?</li>
-                                        <li>Ipsam deserunt numquam ad error rem unde, omnis.</li>
-                                        <li>Repellat assumenda adipisci pariatur ipsam eos similique, explicabo.</li>
+                                        <li>At our platform, we offer a diverse range of courses taught by experts in their fields.</li>
+                                        <li>What sets us apart is our commitment to innovation and excellence!</li>
+                                        <li>We leverage cutting-edge technology and pedagogical best practices to deliver immersive and interactive learning experiences.</li>
+                                        <li>Join our community of learners today and embark on your learning journey with us</li>
+                                        <li>Whether you're a beginner or an expert, there's always something new to discover and achieve.</li>
                                     </ul>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quaerat harum facilis
-                                        excepturi et? Mollitia!
+                                        Our platform is designed to foster collaboration, critical thinking, and hands-on learning, enabling our students to succeed in an ever-changing world.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="mu-about-us-right">
                                     <a id="mu-abtus-video" href="https://www.youtube.com/embed/HN3pm9qYAUs" target="mutube-video">
-                                        <img src="../home/assets/img/about-us.jpg" alt="img">
+                                        <img src="../home/assets/img/seftlearn.png" alt="img">
                                     </a>
                                 </div>
                             </div>

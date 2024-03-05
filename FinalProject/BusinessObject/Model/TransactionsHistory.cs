@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BusinessObject.Models
+namespace BusinessObject.Model
 {
-    public partial class Order
+    public partial class TransactionsHistory
     {
-        public Order()
-        {
-            TransactionsHistories = new HashSet<TransactionsHistory>();
-        }
-
         public int Id { get; set; }
         public int UserId { get; set; }
         public int CourseId { get; set; }
+        public int OrderId { get; set; }
+        public decimal? Total { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
 
         public virtual Course Course { get; set; } = null!;
+        public virtual Order Order { get; set; } = null!;
         public virtual User User { get; set; } = null!;
-        public virtual ICollection<TransactionsHistory> TransactionsHistories { get; set; }
     }
 }

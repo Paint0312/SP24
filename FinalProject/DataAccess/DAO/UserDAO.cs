@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject.Model;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -58,6 +58,10 @@ namespace DataAccess.DAO
         }
         public void UpdateUser(User user)
         {
+            if(user == null)
+            {
+                throw new Exception("User is null");
+            }
             context.Users.Update(user);
             context.SaveChanges();
         }

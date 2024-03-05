@@ -281,6 +281,10 @@
       "PackagePath": "staticwebassets\\home\\assets\\img\\math3.jpg"
     },
     {
+      "Id": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\home\\assets\\img\\seftlearn.png",
+      "PackagePath": "staticwebassets\\home\\assets\\img\\seftlearn.png"
+    },
+    {
       "Id": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\home\\assets\\img\\slider\\1.jpg",
       "PackagePath": "staticwebassets\\home\\assets\\img\\slider\\1.jpg"
     },
@@ -355,6 +359,10 @@
     {
       "Id": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\home\\assets\\js\\waypoints.js",
       "PackagePath": "staticwebassets\\home\\assets\\js\\waypoints.js"
+    },
+    {
+      "Id": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\home\\cart.css",
+      "PackagePath": "staticwebassets\\home\\cart.css"
     },
     {
       "Id": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\js\\site.js",

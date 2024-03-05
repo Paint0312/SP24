@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject.Model;
 using DataAccess.Repository.UserRepo;
 using Microsoft.AspNetCore.Mvc;
 

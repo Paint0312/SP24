@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,9 +29,9 @@ namespace DataAccess.DAO
                 }
             }
         }
-        public Course GetCourseById(int id)
+        public List<Course> GetCourseById(int id)
         {
-            return context.Courses.Where(c => c.Id == id).FirstOrDefault();
+            return context.Courses.Where(c => c.Id == id).ToList();
         }
         public IEnumerable<Course> GetCourses()
         {
@@ -51,6 +51,15 @@ namespace DataAccess.DAO
         {
             context.Courses.Remove(course);
             context.SaveChanges();
+        }
+        public List<Course> GetCoursesByUserID(int id)
+        {
+            var query = from c in context.Courses
+                        join o in context.Orders on c.Id equals o.CourseId
+                        join u in context.Users on o.UserId equals u.Id
+                        where u.Id == id
+                        select c;
+            return query.ToList();
         }
     }
 }

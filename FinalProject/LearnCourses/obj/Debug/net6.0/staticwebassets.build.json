@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IrgzLJHlLBlqEPqEXU42Dhzzyg649h3jMNiQ0h6+8Bs=",
+  "Hash": "jyOuBAlRS83/eWUsAFZiG8nDIRQ2ixz156zSxsnnaAs=",
   "Source": "LearnCourses",
   "BasePath": "_content/LearnCourses",
   "Mode": "Default",
@@ -1366,6 +1366,25 @@
       "OriginalItemSpec": "wwwroot\\home\\assets\\img\\math3.jpg"
     },
     {
+      "Identity": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\home\\assets\\img\\seftlearn.png",
+      "SourceId": "LearnCourses",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\",
+      "BasePath": "_content/LearnCourses",
+      "RelativePath": "home/assets/img/seftlearn.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\home\\assets\\img\\seftlearn.png"
+    },
+    {
       "Identity": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\home\\assets\\img\\slider\\1.jpg",
       "SourceId": "LearnCourses",
       "SourceType": "Discovered",
@@ -1725,6 +1744,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\home\\assets\\js\\waypoints.js"
+    },
+    {
+      "Identity": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\home\\cart.css",
+      "SourceId": "LearnCourses",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\",
+      "BasePath": "_content/LearnCourses",
+      "RelativePath": "home/cart.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\home\\cart.css"
     },
     {
       "Identity": "D:\\Ki5-SP24\\PRN211\\Github\\FinalProject\\LearnCourses\\wwwroot\\js\\site.js",

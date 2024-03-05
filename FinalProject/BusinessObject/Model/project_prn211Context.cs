@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace BusinessObject.Models
+namespace BusinessObject.Model
 {
     public partial class project_prn211Context : DbContext
     {

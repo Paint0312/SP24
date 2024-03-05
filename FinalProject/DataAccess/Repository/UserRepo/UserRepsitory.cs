@@ -1,4 +1,4 @@
-﻿using BusinessObject.Models;
+﻿using BusinessObject.Model;
 using DataAccess.DAO;
 using System;
 using System.Collections.Generic;

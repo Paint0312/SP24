@@ -1,6 +1,6 @@
 ﻿@{
     Layout = null;
-    var coursesList = ViewBag.Courses as List<BusinessObject.Models.Course>;
+    var coursesList = ViewBag.Courses as List<BusinessObject.Model.Course>;
 }
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 <!DOCTYPE html>
@@ -28,7 +28,11 @@
     <!-- Main style sheet -->
     <link href="../home/assets/css/style.css" rel="stylesheet">
     <style>
-
+        .image-content{
+            height: 200px;
+            width: 90%;
+            object-fit: cover;
+        }
     </style>
 
     <!-- Google Fonts -->
@@ -93,7 +97,7 @@
                             <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/Home/Courses">Course Archive</a></li>
-                                <li><a href="/Home/CourseDetail">Course Detail</a></li>
+                                <li><a href="/Home/CourseDetails">Course Detail</a></li>
                             </ul>
                         </li>
                         <li><a href="gallery.html">Gallery</a></li>
@@ -107,6 +111,17 @@
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="404.html">404 Page</a></li>
                         <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i> <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/Home/Profile">Profile</a></li>
+                                <li><a href="course-detail.html">Balance</a></li>
+                                <li><a href="/Home/Cart">Cart</a></li>
+                                <li><a href="/Home/Logout">Logout</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -162,7 +177,7 @@
                                             <div class="col-md-6 col-sm-6">
                                                 <div class="mu-latest-course-single">
                                                     <figure class="mu-latest-course-img">
-                                                        <a href="#"><img src="@c.ThumbnailImage" alt="img"></a>
+                                                        <a href="#"><img class="image-content" src="@c.ThumbnailImage" alt="img"></a>
                                                         <figcaption class="mu-latest-course-imgcaption">
                                                             <a href="#">@c.Name</a>
                                                             <span><i class="fa fa-clock-o"></i>90Days</span>
@@ -172,7 +187,7 @@
                                                         <h4><a href="#">@c.Description.</a></h4>
                                                         <p>@c.Content</p>
                                                         <div class="mu-latest-course-single-contbottom">
-                                                            <a class="mu-course-details" href="#">Details</a>
+                                                            <a class="mu-course-details" href="/Home/CourseDetails?id=@c.Id">Details</a>
                                                             <span class="mu-course-price" href="#">$@c.Price</span>
                                                         </div>
                                                     </div>
